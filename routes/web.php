@@ -286,6 +286,32 @@ View::composer('components.main', function ($view) {
             ],
         ],
     ];
+    $icons = [
+        [
+            "text" => "DIGITAL COMICS",
+            "src" => Vite::asset('../public/images/buy-comics-digital-comics.png'),
+        ],
+        [
+            "text" => "DC MERCHANDISE",
+            "src" => Vite::asset('../public/images/buy-comics-merchandise.png'),
+        ],
+        [
+            "text" => "SUBSCRIPTION",
+            "src" => Vite::asset('../public/images/buy-comics-subscriptions.png'),
+        ],
+        [
+            "text" => "COMIC SHOP LOCATOR",
+            "src" => Vite::asset('../public/images/buy-comics-shop-locator.png'),
+        ],
+        [
+            "text" => "DC POWER VISA",
+            "src" => Vite::asset('../public/images/buy-dc-power-visa.svg'),
+        ],
+    ];
 
-    $view->with('comics', $comics);
+
+
+    $view->with('comics', $comics)
+        ->with('icons', $icons);
+
 });

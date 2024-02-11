@@ -22,4 +22,21 @@
     </div>
 
 
+    <div class="icons-section">
+        <div class="container">
+            <ul>
+                @foreach ($icons as $icon)
+                    <li>
+                        <div class="box-icon">
+                            <img src="{{ $icon['src'] }}" alt="sus">
+                        </div>
+                        <p>{{ $icon['text'] }}</p>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
+
+
+
 </main>
